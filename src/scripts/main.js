@@ -1,2 +1,2 @@
-console.log("Welcome to the main module")
+console.log("ml_diagram")
 
