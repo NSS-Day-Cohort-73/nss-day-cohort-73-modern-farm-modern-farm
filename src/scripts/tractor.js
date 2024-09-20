@@ -9,17 +9,17 @@ export const plantSeeds = (plan) => {
     for (const row of plan) {
         for (const item of row) {
             if (item === "Soybean") {
-                addPlant(createSoybean)
+                addPlant(createSoybean())
             } else if (item === "Sunflower") {
-                addPlant(createSunflower)
+                addPlant(createSunflower())
             } else if (item === "Asparagus") {
                 addPlant(createAsparagus)
             } else if (item === "Wheat") {
-                addPlant(createWheat)
+                addPlant(createWheat())
             } else if (item === "Potato") {
-                addPlant(createPotato)
+                addPlant(createPotato())
             } else if (item === "Corn") {
-                addPlant(createCorn)
+                addPlant(createCorn())
             }
         }
     }
