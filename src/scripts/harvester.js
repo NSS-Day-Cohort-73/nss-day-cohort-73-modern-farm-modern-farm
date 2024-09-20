@@ -11,9 +11,9 @@ export const harvestPlants= (plantsArray) => {
             seedOutput = plant.output
         }
 
-        
 
-       
+
+       xxxxx
 
 
     }
