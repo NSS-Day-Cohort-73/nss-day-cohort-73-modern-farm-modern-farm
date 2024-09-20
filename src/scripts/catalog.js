@@ -1,1 +1,1 @@
-//iterate over food objects build HTML based on element and make a flexbox CSS gird to house it
+//iterate over food objects build HTML based on element and make a flexbox CSS grid to house it

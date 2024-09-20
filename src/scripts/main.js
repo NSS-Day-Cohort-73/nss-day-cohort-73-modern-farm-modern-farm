@@ -10,3 +10,4 @@ console.log("Welcome to the main module")
 //invoke finalFieldArray = harvestPlants(fieldArray)
 
 //invoke catalog(finalFieldArray) to pass the final array to the HTML builder
+
