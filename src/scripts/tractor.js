@@ -36,7 +36,7 @@ export const plantSeeds = (currentPlant) => {
                 plants.push(corn)
                 } else {
 //in case something breaks :o
-                    console.log("something went wrong")
+                    console.log("Han Shot First")
                 }
             }
         }
