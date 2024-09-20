@@ -8,7 +8,6 @@ import { createCorn } from "./seeds/corn.js";
 //addPlant() from field.js so we can pass the return of plantSeeds() along to it
 import { addPlant } from "./field.js";
 
-
 export const plantSeeds = (currentPlant) => {
     let plants = []
 
