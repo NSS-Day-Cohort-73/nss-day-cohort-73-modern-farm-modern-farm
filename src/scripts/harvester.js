@@ -11,12 +11,17 @@ export const harvestPlants= (plantsArray) => {
             seedOutput = plant.output
         }
 
+        for (let i = 0; i > harvestedPlants; i++) {
+            harvestPlants.push()
+        }
 
 
-       xxxxx
+
+    
 
 
     }
 
+    return harvestPlants
 
 }

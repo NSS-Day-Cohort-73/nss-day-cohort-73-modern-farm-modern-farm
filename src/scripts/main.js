@@ -1,2 +1,4 @@
-console.log("ml_diagram")
+import { createPlan } from "./plan.js"
 
+const yearlyPlan = createPlan();
+ 
