@@ -2,7 +2,7 @@
 // imports: createPlan(), plantSeeds(), usePlants(), harvestPlants(), createCatalog()
 // variables: yearlyPlan[], fieldArray[], finalFieldArray[]
 
-import { createPlan } from "./plan";
+import {createPlan} from "./plan.js"
 import {plantSeeds} from "./tractor.js"
 import {usePlants} from "./field.js"
 import {harvestPlants} from "./harvester.js"
