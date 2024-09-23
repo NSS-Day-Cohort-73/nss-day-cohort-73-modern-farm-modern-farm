@@ -1,5 +1,3 @@
-import { plantsArray } from "./main.js"
-
 export const harvestPlants= (plantsArray) => {
     let harvestedPlants = [];
 
