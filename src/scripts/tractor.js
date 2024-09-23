@@ -1,10 +1,10 @@
 //creating the seeds() lets gooooooo
-import { createPotato } from "./seeds/potato.js";
-import { createSoybean } from "./seeds/soybean.js";
-import { createWheat } from "./seeds/wheat.js";
-import { createSunflower } from "./seeds/sunflower.js";
-import { createAsparagus } from "./seeds/asparagus.js";
-import { createCorn } from "./seeds/corn.js";
+import { createPotato } from "./seeds.js/potato.js";
+import { createSoybean } from "./seeds.js/soybean.js";
+import { createWheat } from "./seeds.js/wheat.js";
+import { createSunflower } from "./seeds.js/sunflower.js";
+import { createAsparagus } from "./seeds.js/asparagus.js";
+import { createCorn } from "./seeds.js/corn.js";
 //addPlant() from field.js so we can pass the return of plantSeeds() along to it
 import { addPlant } from "./field.js";
 
