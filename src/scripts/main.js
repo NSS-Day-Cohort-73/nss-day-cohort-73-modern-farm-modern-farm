@@ -9,41 +9,22 @@ import {harvestPlants} from "./harvester.js"
 import {createCatalog} from "./catalog.js"
 
 // invoke createPlan() from plan.js into the yearlyPlan variable
+const yearlyPlan = createPlan()
 
-// const yearlyPlan = []
-// yearlyPlan = createPlan()
-
+// invoke plantSeeds() from tractor.js to convert yearlyPlan to an array of plant objects
 plantSeeds(yearlyPlan)
 
-// for each element in yearlyPlan invoke addPlant() return to variable
 
-// yearlyPlan.forEach = (cropString) => {
-   // addPlant(cropString)
+// invoke usePlants() in field.js to return a copy of the array of plant objects 
+let fieldArray = usePlants()
 
-   //  return yearlyPlan
-// }
-// pick one, above or below 
-// for (const cropString of yearlyPlan) {
-   // addPlant(cropString)
 
-   // return yearlyPlan
-// }
+// invoke harvestPlants() in harvester.js to convert the fieldArray[] into the final list of crops
+let finalFieldArray = harvestPlants(fieldArray)
 
-// invoke plantSeeds(yearlyPlan)
 
-fieldArray = plantSeeds()
-
-// invoke fieldArray = usePlants()
-
-// const fieldHTML = usePlants()
-
-// invoke finalFieldArray = harvestPlants(fieldArray)
-
-finalFieldArray = []
-finalFieldArray = harvestPlants(fieldArray)
-
-// invoke catalog(finalFieldArray) to pass the final array to the HTML builder
+// invoke catalog(finalFieldArray) to pass the final field array to the HTML builder
 // return the final array after passing though catalog() to convert into an HTML string to add to the DOM using innerHTML
 
-const catalogHTML = catalog(finalFieldArray)
+const catalogHTML = createCatalog(finalFieldArray)
 catalogHTML.innerHTML = finalFieldArray
