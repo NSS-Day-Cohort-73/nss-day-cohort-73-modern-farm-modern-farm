@@ -3,15 +3,40 @@
 // for each element invoke relevant createVegetable() function in seeds directory and return object 
 // invoke the addPlant(xObject) function to push to fieldArray
 
+import {createAsparagus} from "seeds/asparagus.js"
+import {createCorn} from "seeds/corn.js"
+import {createPotato} from "seeds/potato.js"
+import {createSoybean} from "seeds/soybean.js"
+import {createSunflower} from "seeds/sunflower.js"
+import {createWheat} from "seeds/wheat.js"
 
 
 
-
-for(let array of stringArray){
-    let index = 0
-    while( index < array.length){
-        addPlant(array[index])
-        ++index
-    
+plantSeeds = (yearlyPlan) => {
+    for(let row of yearlyPlan){
+        let vegetable = ""
+        for(let plot of row){
+            switch(plot){
+                case "Asparagus":
+                    vegetable = createAsparagus()
+                    break
+                case "Corn":
+                    vegetable = createCorn()
+                    break
+                case "Potato":
+                    vegetable = createPotato()
+                    break
+                case "Soybean":
+                    vegetable = createSoybean()
+                    break
+                case "Sunflower":
+                    vegetable = createSunflower()
+                    break
+                case "Wheat":
+                    vegetable = createWheat()
+                    break
+            }           
+            addPlant(vegetable)       
+        }
     }
 }
