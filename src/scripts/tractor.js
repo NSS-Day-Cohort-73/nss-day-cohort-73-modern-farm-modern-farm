@@ -9,30 +9,28 @@ import { createCorn } from "./seeds.js/corn.js";
 import { addPlant } from "./field.js";
 
 export const plantSeeds = (currentPlant) => {
-    let plants = []
 
     for (let i = 0; i < currentPlant.length; i++) {
-        for (const plant of currentPlant) {
-            for (let i = 0; i < plant.length; i++) {
+        for (const plant of currentPlant[i]) {
 //forward slashes are for testing output :)
-                if (plant[i] === "Potato") {
+                if (plant === "Potato") {
                 let potato = createPotato() //"Potato"
-                plants.push(potato)
-                } else if (plant[i] === "Soybean") {
+                addPlant(potato)
+                } else if (plant === "Soybean") {
                 let soybean = createSoybean() //"Soybean"
-                plants.push(soybean)
-                } else if (plant[i] === "Wheat") {
+                addPlant(soybean)
+                } else if (plant === "Wheat") {
                 let wheat = createWheat() //"Wheat"
-                plants.push(wheat)
-                } else if (plant[i] === "Sunflower") {
-                let asparagus = createSunflower() //"Sunflower"
-                plants.push(asparagus)
-                } else if (plant[i] === "Asparagus") {
+                addPlant(wheat)
+                } else if (plant === "Sunflower") {
+                let sunflower = createSunflower() //"Sunflower"
+                addPlant(sunflower)
+                } else if (plant === "Asparagus") {
                 let asparagus = createAsparagus() //"Asparagus"
-                plants.push(asparagus)
-                } else if (plant[i] === "Corn") {
+                addPlant(asparagus)
+                } else if (plant === "Corn") {
                 let corn = createCorn() //"Corn"
-                plants.push(corn)
+                addPlant(corn)
                 } else {
 //in case something breaks :o
                     console.log("Han Shot First")
@@ -40,6 +38,4 @@ export const plantSeeds = (currentPlant) => {
             }
         }
 //passing the array of this mess to addPlant() to make the field happy !
-    return addPlant(plants)
     }
-}
