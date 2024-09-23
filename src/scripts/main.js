@@ -1,10 +1,20 @@
+import { createPlan } from "./plan.js";
+import { plantSeeds } from "./tractor.js"
+import { usePlants } from "./field.js"
+import { harvestPlants } from "./harvester.js"
+import { catalog } from "./catalog.js"
 
-import { createAsparagus } from "./seeds/asparagus.js";
-import { createCorn } from "./seeds/corn.js";
-import { createPotato } from "./seeds/potato.js";
-
-const asparagusSeed = createAsparagus();
-console.log(asparagusSeed);
 
 const yearlyPlan = createPlan();
+
+const plantedSeeds = plantSeeds(yearlyPlan);
+
+const fieldArray = usePlants();
+
+const harvestArray = harvestPlants(fieldArray);
+
+const  htmlString = catalog(harvestArray)
+
+
  
+
