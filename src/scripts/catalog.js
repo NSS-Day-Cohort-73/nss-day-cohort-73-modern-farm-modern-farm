@@ -3,7 +3,7 @@ export function Catalog(harvestedPlants) {
     
     for (const food of harvestedPlants) {
         mainElement.innerHTML += `
-            <section class="plant">${food.name}</section>
+            <section class="plant">${food.type}</section>
         `;
     }
 }

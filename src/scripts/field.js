@@ -6,13 +6,19 @@ let plants = []
 const addPlant = (seed) => {
     if(Array.isArray(seed)) {
         seed.forEach(plant => plants.push(plant))
-    } else {
+    } 
+    else {
         plants.push(seed)
     }
 }
 
 const usePlants = () => {
+    console.log(plants)
     return [...plants]
 }
 
 export { addPlant, usePlants }
+
+
+
+

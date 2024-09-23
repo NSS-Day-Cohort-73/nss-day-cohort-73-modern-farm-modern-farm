@@ -7,10 +7,11 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #0f0e0e;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
+    background-color: aliceblue;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -32,5 +33,32 @@ h1,h2,h3,h4,h5,h6 {
 
 .red {
     background-color: darksalmon;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 590px;
+    height: 590px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 15px dotted wheat;
+    padding: 10px;
+
+}
+
+
+
+.messages {
+    display: flex;
+}
+
+.plant {
+    font-size: large;
+    gap: 10px;
 }
 
