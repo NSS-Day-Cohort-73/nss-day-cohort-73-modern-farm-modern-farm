@@ -9,10 +9,12 @@ import {createPotato} from "seeds/potato.js"
 import {createSoybean} from "seeds/soybean.js"
 import {createSunflower} from "seeds/sunflower.js"
 import {createWheat} from "seeds/wheat.js"
+import {addPlant} from "field.js"
 
 
-
-plantSeeds = (yearlyPlan) => {
+// iterate over the yearlyPlan[] multidimensional array
+// for each element of the sub-arrays call the correct create function, create a plant object, and pass it to the addPlant() function 
+export const plantSeeds = (yearlyPlan) => {
     for(let row of yearlyPlan){
         let vegetable = ""
         for(let plot of row){
