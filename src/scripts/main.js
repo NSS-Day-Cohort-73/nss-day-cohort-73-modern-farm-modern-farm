@@ -1,9 +1,9 @@
-import { createPlan } from "./plan.js";
-import { plantSeeds } from "./tractor.js";
+import { createAsparagus } from "./seeds/asparagus.js";
+import { createCorn } from "./seeds/corn.js";
+import { createPotato } from "./seeds/potato.js";
 
-const yearlyPlan = createPlan()
-console.log("Welcome to the main thing")
+const asparagusSeed = createAsparagus();
+console.log(asparagusSeed);
 
-const plants = plantSeeds(yearlyPlan)
 
 
